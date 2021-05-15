@@ -19,6 +19,11 @@ object Start {
     println("Case class implementation:")
     val messageQuoter = new MessageQuoter("abc")
     messageQuoter.printMessage()
+
+
+    println("*******************************************************")
+    println("Quoter Aggregator:")
+    QuoterAggregator.printAllMessages()
   }
 
 }
