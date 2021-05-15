@@ -14,6 +14,11 @@ object Start {
     println("\tNot default message:")
     val notDefaultMessageQuoter = new ShakespearQuoter("Hello there")
     notDefaultMessageQuoter.printMessage()
+
+    println("-------------------------------------------------------")
+    println("Case class implementation:")
+    val messageQuoter = new MessageQuoter("abc")
+    messageQuoter.printMessage()
   }
 
 }
