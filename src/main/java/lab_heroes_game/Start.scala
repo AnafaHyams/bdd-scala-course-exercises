@@ -17,8 +17,8 @@ object Start {
     println("Elf kick:---")
     println(s"Is elf alive: ${elf.isAlive()}")
 
-    println("-------------------------------------------------------")
-    println("-------------------------------------------------------")
+
+    println("****************************")
 
     println("Hobbit kick Elf:")
     hobbit.kick(elf)
@@ -27,8 +27,33 @@ object Start {
 
 
     println("-------------------------------------------------------")
-    println("-------------------------------------------------------")
 
+    println("King creation:")
+    var king = new King
+    println(s"power: ${king.power} and hp: ${king.hp}")
+    println("King kick:---")
+    println(s"Is King alive: ${king.isAlive()}")
+
+    println("****************************")
+
+    println("Elf kick King:")
+    elf.kick(king)
+    println("King kick Elf:")
+    king.kick(elf)
+
+    println("-------------------------------------------------------")
+    println("Knight creation:")
+    var knight = new Knight
+    println(s"power: ${knight.power} and hp: ${knight.hp}")
+    println("Knight kick:---")
+    println(s"Is knight alive: ${knight.isAlive()}")
+
+    println("****************************")
+
+    println("Knight kick King:")
+    knight.kick(king)
+    println("King kick Knight:")
+    king.kick(knight)
 
   }
 }
