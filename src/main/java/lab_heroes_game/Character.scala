@@ -4,6 +4,6 @@ trait Character {
   var power: Int
   var hp: Int
 
-  def kick(character: Character):Unit
+  def kick(enemy: Character):Unit
   def isAlive():Boolean = hp > 0
 }
