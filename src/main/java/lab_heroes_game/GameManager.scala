@@ -6,17 +6,24 @@ object GameManager {
     var roundNumber: Int = 0
 
     while (c1.isAlive() && c2.isAlive()) {
-      println("*********************************************")
+      println("-----------------------------------------------------------------")
       roundNumber += 1
       println(s"Round $roundNumber:")
 
-      println(s"${c1.getClass.getSimpleName} kick ${c2.getClass.getSimpleName}")
+      println(s"${c1.getClass.getSimpleName} kick ${c2.getClass.getSimpleName}-")
       c1.kick(c2)
-      println(s"${c2.getClass.getSimpleName} kick ${c1.getClass.getSimpleName}")
+      println(s"${c2.getClass.getSimpleName} kick ${c1.getClass.getSimpleName}-")
       c2.kick(c1)
+
+      printEndOfRoundCharactersStatus(c1, c2)
     }
 
     gameOver(c1,c2)
+  }
+
+  private def printEndOfRoundCharactersStatus(c1: Character, c2: Character): Unit = {
+    println(s"C1 - ${c1.getClass.getSimpleName}:\n power = ${c1.power} ; hp = ${c1.hp}")
+    println(s"C2 - ${c2.getClass.getSimpleName}:\n power = ${c2.power} ; hp = ${c2.hp}")
   }
 
   private def gameOver(c1: Character, c2: Character): Unit = {

@@ -8,7 +8,6 @@ abstract class RandomDataCharacter extends Character {
     var randomDecreaseNum: Int = Random.between(0,this.power + 1)
     println(s"I decrease enemy hp by $randomDecreaseNum")
     enemy.hp -= randomDecreaseNum
-    println(s"Enemy power = ${enemy.power} ; Enemy hp = ${enemy.hp}")
   }
 
 }
