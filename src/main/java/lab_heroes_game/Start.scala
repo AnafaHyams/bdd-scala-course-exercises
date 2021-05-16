@@ -3,6 +3,7 @@ package lab_heroes_game
 object Start {
   def main(args: Array[String]): Unit = {
 
+    /*
     println("-------------------------------------------------------")
     println("Hobbit creation:")
     var hobbit = new Hobbit
@@ -59,6 +60,16 @@ object Start {
     println("Random character creation bt CharacterFactory class:")
     val character = new CharacterFactory().createCharacter()
     println(character.getClass)
+
+     */
+
+    var character1: Character = CharacterFactory.createCharacter()
+    var character2: Character = CharacterFactory.createCharacter()
+
+    println(character1)
+    println(character2)
+
+    GameManager.fight(character1, character2)
 
   }
 }

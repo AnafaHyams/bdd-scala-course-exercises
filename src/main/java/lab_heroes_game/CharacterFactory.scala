@@ -2,7 +2,7 @@ package lab_heroes_game
 
 import scala.util.Random
 
-class CharacterFactory {
+object CharacterFactory {
 
   def createCharacter(): Character = {
     val randomNumber: Int = Random.between(1,4)
