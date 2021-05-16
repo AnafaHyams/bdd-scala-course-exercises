@@ -55,5 +55,10 @@ object Start {
     println("King kick Knight:")
     king.kick(knight)
 
+    println("-------------------------------------------------------")
+    println("Random character creation bt CharacterFactory class:")
+    val character = new CharacterFactory().createCharacter()
+    println(character.getClass)
+
   }
 }
