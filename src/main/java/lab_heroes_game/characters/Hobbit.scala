@@ -8,7 +8,5 @@ class Hobbit extends Character {
 
   private def toCry(): Unit = println("I'm Hobbit and I'm crying because I have no power")
 
-  override def kick(enemy: Character): Unit = {
-    toCry()
-  }
+  override def kick(enemy: Character): Unit = toCry()
 }

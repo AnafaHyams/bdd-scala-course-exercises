@@ -1,12 +1,13 @@
 package lab_heroes_game
 
+import lab_heroes_game.character_patterns.Character
 import lab_heroes_game.flow.{CharacterFactory, GameManager}
 
 object Start {
   def main(args: Array[String]): Unit = {
 
-    var character1: character_patterns.Character = CharacterFactory.createCharacter()
-    var character2: character_patterns.Character = CharacterFactory.createCharacter()
+    var character1: Character = CharacterFactory.createCharacter()
+    var character2: Character = CharacterFactory.createCharacter()
 
     printRandomCharactersDetails(character1,character2)
 
