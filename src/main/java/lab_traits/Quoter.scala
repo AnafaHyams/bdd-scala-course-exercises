@@ -6,6 +6,9 @@ trait Quoter {
 
   def printMessage():Unit
 
-  final def registerInQuoterAggregator(): Unit = QuoterAggregator.addQuoter(this)
+  final def registerInQuoterAggregator(): Unit = {
+    QuoterAggregator.addQuoter(this)
+    QuoterAggregatorScala.addQuoter(this)
+  }
 
 }

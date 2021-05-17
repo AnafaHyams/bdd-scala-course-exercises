@@ -22,8 +22,11 @@ object Start {
 
 
     println("*******************************************************")
-    println("Quoter Aggregator:")
+    println("Quoter Aggregator written in java:")
     QuoterAggregator.printAllMessages()
+    println("*******************************************************")
+    println("Quoter Aggregator written in scala:")
+    QuoterAggregatorScala.printAllMessages()
   }
 
 }
