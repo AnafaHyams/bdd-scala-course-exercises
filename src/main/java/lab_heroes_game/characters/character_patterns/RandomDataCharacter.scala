@@ -2,7 +2,7 @@ package lab_heroes_game.characters.character_patterns
 
 import scala.util.Random
 
-abstract class RandomDataCharacter extends Character {
+trait RandomDataCharacter extends Character {
 
   override def kick(enemy: Character): Unit = {
     var randomDecreaseNum: Int = Random.between(0,this.power + 1)
