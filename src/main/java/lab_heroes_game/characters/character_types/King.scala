@@ -1,6 +1,6 @@
-package lab_heroes_game.character_types
+package lab_heroes_game.characters.character_types
 
-import lab_heroes_game.character_patterns.RandomDataCharacter
+import lab_heroes_game.characters.character_patterns.RandomDataCharacter
 
 import scala.util.Random
 

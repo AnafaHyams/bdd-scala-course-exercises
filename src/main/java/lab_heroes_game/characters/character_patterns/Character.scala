@@ -1,4 +1,4 @@
-package lab_heroes_game.character_patterns
+package lab_heroes_game.characters.character_patterns
 
 trait Character {
   var power: Int

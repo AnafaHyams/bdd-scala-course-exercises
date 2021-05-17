@@ -1,10 +1,10 @@
 package lab_heroes_game.flow
 
-import lab_heroes_game.character_patterns
+import lab_heroes_game.characters.character_patterns.Character
 
 object GameManager {
 
-  def fight(c1: character_patterns.Character, c2: character_patterns.Character): Unit = {
+  def fight(c1: Character, c2: Character): Unit = {
     var roundNumber: Int = 0
 
     while (c1.isAlive() && c2.isAlive()) {
@@ -23,12 +23,12 @@ object GameManager {
     gameOver(c1, c2)
   }
 
-  private def printEndOfRoundCharactersStatus(c1: character_patterns.Character, c2: character_patterns.Character): Unit = {
+  private def printEndOfRoundCharactersStatus(c1: Character, c2: Character): Unit = {
     println(s"C1 - ${c1.getClass.getSimpleName}:\n power = ${c1.power} ; hp = ${c1.hp}")
     println(s"C2 - ${c2.getClass.getSimpleName}:\n power = ${c2.power} ; hp = ${c2.hp}")
   }
 
-  private def gameOver(c1: character_patterns.Character, c2: character_patterns.Character): Unit = {
+  private def gameOver(c1: Character, c2: Character): Unit = {
     println("*********************************************")
     println("GAME OVER!!")
 
