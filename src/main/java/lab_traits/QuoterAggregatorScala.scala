@@ -6,7 +6,6 @@ object QuoterAggregatorScala {
 
   def addQuoter(quote: Quoter): Unit = {
     quotes = quote::quotes
-    println(s"quote:  $quote")
   }
 
   def printAllMessages(): Unit = {
