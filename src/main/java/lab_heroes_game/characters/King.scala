@@ -1,4 +1,6 @@
-package lab_heroes_game
+package lab_heroes_game.characters
+
+import lab_heroes_game.character_patterns.RandomDataCharacter
 
 import scala.util.Random
 

@@ -1,4 +1,6 @@
-package lab_heroes_game
+package lab_heroes_game.characters
+
+import lab_heroes_game.character_patterns.Character
 
 class Hobbit extends Character {
   override var power: Int = 0
