@@ -1,4 +1,4 @@
-package lab_heroes_game.characters
+package lab_heroes_game.character_types
 
 import lab_heroes_game.character_patterns.Character
 

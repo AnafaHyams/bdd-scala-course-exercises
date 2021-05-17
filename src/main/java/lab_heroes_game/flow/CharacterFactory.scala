@@ -1,7 +1,7 @@
 package lab_heroes_game.flow
 
 import lab_heroes_game.character_patterns
-import lab_heroes_game.characters.{Elf, Hobbit, King, Knight}
+import lab_heroes_game.character_types.{Elf, Hobbit, King, Knight}
 
 import scala.util.Random
 
